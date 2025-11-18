@@ -54,7 +54,9 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'setup.urls'
 
 REST_FRAMEWORK = {
-    'DEFAULT_AUTHENTICATION_CLASSES':('rest_framewor_simplejwt.authentication.JWTAtuhentication')
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    )
 }
 
 TEMPLATES = [
